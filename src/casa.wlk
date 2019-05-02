@@ -14,12 +14,11 @@ object casaDePepeYJulian {
 
 	method compraMasCara(){return cosas.max({cosa => cosa.precio()})}
 	
-	method electrodomesticosComprados(){ cosas.find({cosa => cosa.esElectrodomestico()})
-	}
+	method electrodomesticosComprados(){return cosas.filter({cosa => cosa.esElectrodomestico()})}
 	
 	method malaEpoca(){return cosas.all({cosa => cosa.esComida()})}
 	
-	method queFaltaComprar(lista){}
+	method queFaltaComprar(lista){ return cosas.contains(lista)}
 	
 	method faltaComida(){return cosas.count({cosa => cosa.esComida()}) < 2}
 }
