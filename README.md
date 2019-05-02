@@ -3,7 +3,8 @@ Pepe y Julián viven juntos, y les gusta comprar cosas.
 De cada cosa nos interesa el precio, si es comida o no, y si es un electrodoméstico o no.
 
 ## Sobre las cosas que se compran
-En este modelo reducido, vamos a considerar las siguientes cosas que podrían ser interesantes para comprar: una heladera que vale 20000 pesos, una cama que sale 8000, una tira de asado que sale 350 pesos, un paquete de fideos que sale 50 pesos, y una plancha que vale 1200 pesos. Por las dudas aclaramos: la cama no es un electrodoméstico, la plancha sí.
+En este modelo reducido, vamos a considerar las siguientes cosas que podrían ser interesantes para comprar: 
+una heladera que vale 20000 pesos, una cama que sale 8000, una tira de asado que sale 350 pesos, un paquete de fideos que sale 50 pesos, y una plancha que vale 1200 pesos. Por las dudas aclaramos: la cama no es un electrodoméstico, la plancha sí.
 
 Implementar, además de los objetos que representan cada cosa, un objeto que represente a la casa, que entienda los siguientes mensajes:
 - `comprar(cosa)`: registra que se ha comprado una cosa.
@@ -12,7 +13,8 @@ Implementar, además de los objetos que representan cada cosa, un objeto que rep
 - `vieneDeEquiparse()`: indica si la _última_ cosa que se compró es un electrodoméstico, o bien vale más de 5000 pesos.
 - `esDerrochona()`: indica si el importe total de las cosas compradas es de 9000 pesos o más.
 - `compraMasCara()`: retorna la cosa comprada de mayor valor.
-- `electrodomésticosComprados()`: devuelve un objeto que contiene todas las cosas compradas que son electrodomésticos. 
+- `electrodomésticosComprados()`: devuelve un objeto que contiene todas las cosas compradas 
+	que son electrodomésticos. 
 - `malaEpoca()`: indica si todas las cosas compradas son comida.
 - `queFaltaComprar(lista)`: recibe una lista de cosas y devuelve las cosas de esa lista que aún no se han comprado. <br>
   **Atención**: es una pregunta. No se pide que se compren. 
